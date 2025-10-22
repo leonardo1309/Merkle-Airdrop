@@ -24,4 +24,10 @@ contract DeployMerkleAirdrop is Script {
         return deployMerkleAirdrop();
 
     }
+
+    function getMerkleRoot() public view returns (bytes32) {
+        return s_MerkleRoot;
+    }
+
+    
 }
